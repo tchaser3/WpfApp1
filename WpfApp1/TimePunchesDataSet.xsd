@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TimePunchesDataSet" targetNamespace="http://tempuri.org/TimePunchesDataSet.xsd" xmlns:mstns="http://tempuri.org/TimePunchesDataSet.xsd" xmlns="http://tempuri.org/TimePunchesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TimePunchesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="TimePunchesDataSet" msprop:Generator_DataSetName="TimePunchesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="timepunches" msprop:Generator_RowEvHandlerName="timepunchesRowChangeEventHandler" msprop:Generator_RowDeletedName="timepunchesRowDeleted" msprop:Generator_RowDeletingName="timepunchesRowDeleting" msprop:Generator_RowEvArgName="timepunchesRowChangeEvent" msprop:Generator_TablePropName="timepunches" msprop:Generator_RowChangedName="timepunchesRowChanged" msprop:Generator_RowChangingName="timepunchesRowChanging" msprop:Generator_TableClassName="timepunchesDataTable" msprop:Generator_RowClassName="timepunchesRow" msprop:Generator_TableVarName="tabletimepunches" msprop:Generator_UserTableName="timepunches">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="PayID" msprop:Generator_ColumnPropNameInRow="PayID" msprop:Generator_ColumnPropNameInTable="PayIDColumn" msprop:Generator_ColumnVarNameInTable="columnPayID" msprop:Generator_UserColumnName="PayID" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
+              <xs:element name="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_UserColumnName="FirstName" type="xs:string" />
+              <xs:element name="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_UserColumnName="LastName" type="xs:string" />
+              <xs:element name="TransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
+              <xs:element name="Source" msprop:Generator_ColumnPropNameInRow="Source" msprop:Generator_ColumnPropNameInTable="SourceColumn" msprop:Generator_ColumnVarNameInTable="columnSource" msprop:Generator_UserColumnName="Source" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:timepunches" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
